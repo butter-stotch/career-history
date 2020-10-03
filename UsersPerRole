@@ -1,3 +1,4 @@
+-- This gives you all the members of the specified role
 WITH RoleMembers (member_principal_id, role_principal_id) 
 AS 
 (
