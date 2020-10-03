@@ -9,10 +9,10 @@ select Email,BonusEligibility,WeekFilter into #currentweek from RemoteStoreOpera
 where WeekFilter = '05/04/2020-05/10/2020' AND CreatedBy = 'System Generated'
 
 
-select * from #currentweek A
-join #PreviousWeek B 
-on A.Email = B.Email
-AND A.BonusEligibility<>B.BonusEligibility
+select * from #currentweek cw
+join #PreviousWeek pw 
+on cw.Email = pw.Email
+AND cw.BonusEligibility<>pw.BonusEligibility
 
 miwaheeb@microsoft.com
 miwilli@microsoft.com
